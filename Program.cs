@@ -29,9 +29,24 @@
             int numb = int.Parse(Console.ReadLine());
             for (int i = 1; i <= 10; i++)
             {
-                int result = number * i;
-                Console.WriteLine(number + " x " + i + " = " + result);
+                int result = numb * i;
+                Console.WriteLine(numb + " x " + i + " = " + result);
             }
+            //4-Password Retry
+            /////////////////////////////////
+            string password = "Spark2026";
+            string userPassword = "";
+            while (userPassword != password)
+            {
+                Console.WriteLine("Enter Password:");
+                userPassword = Console.ReadLine();
+
+                if (userPassword != password)
+                {
+                    Console.WriteLine("Incorrect password, try again.");
+                }
+            }
+            Console.WriteLine("Access Granted");
         }
     }
 }
